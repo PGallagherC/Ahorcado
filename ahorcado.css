@@ -1,0 +1,215 @@
+body{
+    background-color: #F3F5FC;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+    }
+
+main{
+   /* border: 5px solid red;*/
+    display: grid;
+    grid-template-columns:5% 95%;
+
+}
+
+    #logoAlura{
+
+        box-sizing: content-box;
+        margin-left:50px;
+        margin-top: 50px;
+        position: relative;
+        height: auto;
+    }
+
+    #mainDisplay{
+        /*border: 5px solid blue;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* height: 670px;
+        gap: 20px; */
+    }
+
+        .iniciarJuego{
+			margin-top: 50px;
+            width: 317px;
+            height: 114px;
+        }
+
+            .blueButton{
+                background-color: #0A3871;
+                color: #ffffff;
+                font-size: 18px;
+                font-weight: 400;
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                border: 1px solid #0A3871;
+                border-radius: 24px;
+            }
+
+            .sizeButton{
+                height:67px;
+                width:332px;
+            }
+
+        .nuevaPalabra{
+			margin-top: 20px;
+            width: 280px;
+            height: 57px;
+        }
+
+            .greyButton{
+				background-color: #F3F5FC;
+                border-radius: 24px;
+                border: 1px solid #0A3871;
+                font-size: 16px;
+                color: #0A3871;
+            }
+
+        #saveCancelNewWord{
+            visibility:collapse;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+          /*  justify-content: space-between;
+            align-items: center;*/
+        }
+
+            #inputCellCharacters{
+                border: 5px solid goldenrod;
+               display: none; 
+            }
+
+            #inputFrase{
+                visibility:collapse;
+            }
+
+            #adviceDiv{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               gap: 8px;
+            }
+
+            .inputBox{
+                outline:none;
+            }
+            .inputBox::placeholder{
+                color:#0A3871;
+            }
+
+            #saveCancelBtn{
+                visibility: collapse;
+                display: flex;
+                flex-wrap:wrap;
+            }
+
+        #nuevoJuegoDiv{
+            visibility: collapse;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+                #mensajeGanador{
+                    visibility: collapse;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 24px;
+                    color: green;
+                    position: absolute;
+                    top:25%;
+                    left: 60%;
+                }
+
+                #mensajeDerrota{
+                    visibility:collapse;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 24px;
+                    color: red;
+                    position: absolute;
+                    top:25%;
+                    left: 60%;
+                }
+
+                #ahorcadoDiv{
+                    visibility:collapse;
+                    position: absolute;
+                    top: 0;
+                    left: 42%;
+                    height: 350px;
+                    width: 260px;
+                    background-color: none;
+                }
+
+          
+                #palabrasCorrectas{
+                    visibility: visible;
+                    display: inline-block;
+                    visibility: collapse;
+                    text-align: center;
+                    color:#0A3871;
+                    font-size: 56px;
+                    font-family: 'Inter', sans-serif;
+                    margin-top: 5%;
+                }
+
+                    .Correctas{
+
+                        display: inline-block;
+                        text-align: center;
+                        vertical-align: middle;
+                        margin-left:  30px;
+                        padding-bottom: 2%;
+                        width: 80px;
+                        height: 72px;
+                        border-bottom: 5px solid;
+                        color: #0A3871;
+                    }
+
+                #palabrasEquivocadas{
+                    visibility: collapse;
+                    color:#495057;
+                    font-size: 36px;
+                    font-family: 'Inter', sans-serif;
+                    text-align: center;
+                    margin-top: 3%;
+                }
+
+                    .equivocadas{
+                     
+                        padding-right: 20px;
+                    }
+
+                #nuevoDesistirDiv{
+                    visibility: collapse;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    margin-bottom: 5%;
+                }
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    height: auto;
+    font-weight: bold;
+    font-size: 28px;
+    gap: 15px;
+    padding-left: 5%;
+}
+
+.ocultar{
+    display: none;
+}
