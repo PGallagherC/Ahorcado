@@ -41,12 +41,6 @@ nuevoJuegoBtn.addEventListener("click",nuevoJuego);
 
 window.addEventListener('keydown', keyFunction);
 
-if(screen.width <= 1386)
-{
-	let inputCellCharacters = document.getElementById("inputCellCharacters");
-	inputCellCharacters.style.display = "inline";
-}
-
 function keyFunction(event)
 {
 	let spans = document.querySelectorAll("#spanLetras");
