@@ -365,36 +365,33 @@ function reciveFrase()
 	if(palabra === "Ingresa Palabra aqui" || palabra === "" || validacion === true || tieneEspacio == true || tieneNumeros == true )
 	{
 		inputFrases.value = "Ingresa Palabra aqui";
-	} else 
-	if(palabra !="Ingresa Palabra aqui"){
-	palabrasAhorcado.push(palabra);
-	inputFrases.value = "Ingresa Palabra aqui";
-	btnNuevoJuego();
-	btnDesistir();
-	nuevoJuegoDiv.style.visibility="visible";
+	}
+	else if(palabra !="Ingresa Palabra aqui")
+	{
+		palabrasAhorcado.push(palabra);
+		inputFrases.value = "Ingresa Palabra aqui";
+		btnNuevoJuego();
+		btnDesistir();
+		nuevoJuegoDiv.style.visibility="visible";
 
-	let inputFrase = document.getElementById("inputFrase");
-	inputFrase.style.visibility = "collapse";
+		let inputFrase = document.getElementById("inputFrase");
+		inputFrase.style.visibility = "collapse";
 
-	let adviceDiv = document.getElementById("adviceDiv");
-	adviceDiv.style.visibility = "collapse";
+		let adviceDiv = document.getElementById("adviceDiv");
+		adviceDiv.style.visibility = "collapse";
 
-	let guardarRemplazarbtn= document.getElementById("guardarRemplazarbtn");
-	guardarRemplazarbtn.style.visibility = "collapse";
+		let guardarRemplazarbtn= document.getElementById("guardarRemplazarbtn");
+		guardarRemplazarbtn.style.visibility = "collapse";
 
-	let cancelarBtn= document.getElementById("cancelarBtn");
-	cancelarBtn.style.visibility = "collapse";
+		let cancelarBtn= document.getElementById("cancelarBtn");
+		cancelarBtn.style.visibility = "collapse";
 
-	ahorcadoDiv.style.visibility = "visible";
+		ahorcadoDiv.style.visibility = "visible";
 
-	palabrasCorrectas.style.visibility = "visible";
-	palabrasEquivocadas.style.visibility = "visible";
+		palabrasCorrectas.style.visibility = "visible";
+		palabrasEquivocadas.style.visibility = "visible";
 
-	let recibePalabra = muestrPalabra(numeroAleatorio());
-
-	drawLines(recibePalabra);
-
-	window.addEventListener('keydown', keyFunction);
+		returnMenu();
 
 	}
 }
