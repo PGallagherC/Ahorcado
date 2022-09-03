@@ -116,7 +116,8 @@ function displayIniciarJuego()
 	let recibePalabra = muestrPalabra(numeroAleatorio());
 
 	drawLines(recibePalabra);
-
+	let inputFrases = document.getElementById("inputFrase");
+	inputFrases.focus();
 	window.addEventListener('keydown', keyFunction);
 }
 
@@ -140,7 +141,8 @@ function nuevoJuego()
 	source = `ahorcadoDraw/Img0.png`;
 	imagen = document.getElementById("imagen");
 	imagen.src = source;
-
+	let inputFrases = document.getElementById("inputFrase");
+	inputFrases.focus();
 	window.addEventListener('keydown', keyFunction);
 }
 
