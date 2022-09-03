@@ -217,7 +217,7 @@ function inputFrase()
 	inputFrases.style.width ="350px";
 	inputFrases.style.height ="48px";
 	inputFrases.style.border ="none";
-	inputFrases.value = "Ingresa Palabra aqui"
+	inputFrases.value = "";
 	inputFrases.style.backgroundColor ="lightgray";
 	inputFrases.style.color = "#0A3871";
 	inputFrases.style.fontSize ="32px";
